@@ -20,8 +20,8 @@ const App = () => {
     return (
         <div>
             <hgroup>
-                <h1>Internet Radio</h1>
-                <h2>Pop Today</h2>
+                <h1>Pop Today</h1>
+                <h2>on the Internet Radio</h2>
             </hgroup>
 
             <img className="player__image" 
