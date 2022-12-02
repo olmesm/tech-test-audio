@@ -1,5 +1,9 @@
 # React Tech test
 
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/olmesm/tech-test-audio)
+
+---
+
 ## Requirements
 
 - Use the HTML5 audio tag rather than the audio library. See docs on [HTMLMediaElement methods](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio).
