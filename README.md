@@ -1,24 +1,11 @@
-Inspired by https://tests.radically.digital/tests/fullstack-tech-test
+## Audio
 
-Setup:
+- [data/audio/560446**migfus20**happy-background-music.mp3](https://freesound.org/people/Migfus20/sounds/560446/)
+- [data/audio/662105**davejf**sax-riff.mp3](https://freesound.org/people/DaveJf/sounds/662105/)
+- [data/audio/662275**davejf**guitar-melody.mp3](https://freesound.org/people/DaveJf/sounds/662275/)
 
-I'll include 3 mp3 files in a public github repo (free to use files / cc4.0)
-I'll have 3 album covers in b64 encoding
+## Images
 
-I'll have the above data in a json blob to emulate an api [{ url: "", image: "", name: "" }]
-
-I'll have basic styling from https://picocss.com/
-
-I'll have a basic react app setup
-
-Tasks:
-
-make a fetch request to the api to get the albums and songs (5-10mins)
-
-play the song (10-15mins)
-
-do some basic styling (its a classless css library so we could ask for the album art or button to be centered) (5mins)
-
-display the album art (5-10mins)
-
-[stretch/senior] cycle between "stations"
+- [data/images/guitar-756326_640.jpg](https://pixabay.com/photos/guitar-guitarist-music-756326/) by [Firmbee](https://pixabay.com/users/firmbee-663163/?utm_source=link-attribution)
+- [data/images/jazz-1658886_640.jpg](https://pixabay.com/photos/jazz-concert-singer-blues-music-1658886/) by [Sepp](https://pixabay.com/users/sepph-1859049/?utm_source=link-attribution)
+- [data/images/cd-cover-2978944_640.jpg](https://pixabay.com/photos/cd-cover-woman-piano-composing-2978944/) by [Stefan Keller](https://pixabay.com/users/kellepics-4893063/?utm_source=link-attribution)
