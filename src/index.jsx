@@ -4,7 +4,7 @@ import "./index.css"
 
 const SHOW_NATIVE_CONTROLS = true
 
-const MEDIA_API = "/media"
+const MEDIA_API_INDEX = "/media/index.json"
 
 const App = () => {
     const [isLoading, setIsLoading] = React.useState(false)
