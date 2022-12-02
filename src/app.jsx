@@ -5,8 +5,8 @@ const SHOW_NATIVE_CONTROLS = true
 
 const data = {
     name: "Pop Today",
-    src_url: "/media/audio/560446__migfus20__happy-background-music.mp3",
-    logo: "/media/images/cd-cover-2978944_640.jpg", 
+    src_url: "/api/audio/560446__migfus20__happy-background-music.mp3",
+    logo: "/api/images/cd-cover-2978944_640.jpg", 
 }
 
 export const App = () => {

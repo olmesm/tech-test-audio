@@ -1,17 +1,17 @@
 [
     { 
         "name": "Pop Today", 
-        "src_url": "/media/audio/560446__migfus20__happy-background-music.mp3",
-        "logo": "/media/images/cd-cover-2978944_640.jpg"
+        "src_url": "/api/audio/560446__migfus20__happy-background-music.mp3",
+        "logo": "/api/images/cd-cover-2978944_640.jpg"
     },
     { 
         "name": "Jazzy", 
-        "src_url": "/media/audio/662105__davejf__sax-riff.mp3",
-        "logo": "/media/images/jazz-1658886_640.jpg"
+        "src_url": "/api/audio/662105__davejf__sax-riff.mp3",
+        "logo": "/api/images/jazz-1658886_640.jpg"
     },
     { 
         "name": "Acoustic FM", 
-        "src_url": "/media/audio/662275__davejf__guitar-melody.mp3",
-        "logo": "/media/images/guitar-756326_640.jpg.txt"
+        "src_url": "/api/audio/662275__davejf__guitar-melody.mp3",
+        "logo": "/api/images/guitar-756326_640.jpg.txt"
     }
 ]
