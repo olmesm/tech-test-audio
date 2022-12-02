@@ -4,10 +4,9 @@ import "./index.css"
 
 const MEDIA_API_INDEX = "/media/index.json"
 
-const player = new Audio("/media/audio/560446__migfus20__happy-background-music.mp3")
-
 const App = () => {
     const [isLoading, setIsLoading] = React.useState(false)
+    const player = new Audio("/media/audio/560446__migfus20__happy-background-music.mp3")
 
     if (isLoading) {
         return (
