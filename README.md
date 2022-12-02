@@ -2,10 +2,24 @@
 
 ---
 
-## Requirements
+An internet radio for the frontend. Uses vite.js and react.
 
-- Use the HTML5 audio tag rather than the audio library. See docs on [HTMLMediaElement methods](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio).
+## Tasks
 
+- Refactor the app so it gets the radio stations and related data from the server: `/media/index.json`
+- Control the audio element using the play/pause buttons in the application (subsequently disable the controls by setting [`const SHOW_NATIVE_CONTROLS = false`](./src/index.jsx#L5))
+    See docs on [HTMLMediaElement methods](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)
+- [TODO] ensure the app matches the designs
+- Create the ability to cycle between the stations
+- Ensure all station logo's are rendered
+
+```bash
+# Install dependencies
+npm install
+
+# Run the server
+npm run dev
+```
 
 ---
 
