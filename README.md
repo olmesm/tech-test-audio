@@ -14,6 +14,8 @@ An internet radio for the frontend. Uses vite.js and react.
 - Create the ability to cycle between the stations
 - Ensure all station logo's are rendered
 
+## Development
+
 ```bash
 # Install dependencies
 npm install
