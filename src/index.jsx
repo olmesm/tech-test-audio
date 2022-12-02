@@ -21,7 +21,7 @@ const App = () => {
         <div>
             <hgroup>
                 <h1>Pop Today</h1>
-                <h2>on the Internet Radio</h2>
+                <p>on the Internet Radio</p>
             </hgroup>
 
             <img className="player__image" 
