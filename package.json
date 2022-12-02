@@ -1,0 +1,11 @@
+{
+    "scripts":{
+        "dev": "vite"
+    },
+    "dependencies": {
+        "vite": "latest", 
+        "@vitejs/plugin-react": "latest", 
+        "react": "latest",
+        "react-dom": "latest"
+    }
+}
