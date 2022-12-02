@@ -30,12 +30,13 @@ export const App = () => {
             </div>
         
             <audio
+              data-testid="audio"
               src={data.src_url}
               controls={SHOW_NATIVE_CONTROLS}
             />
 
-            <button>Play</button>
-            <button>Pause</button>
+            <button data-testid="play">Play</button>
+            <button data-testid="pause">Pause</button>
         </div>
     )
 }

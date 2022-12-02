@@ -1,11 +1,23 @@
 {
     "scripts":{
-        "dev": "vite --port 8000"
+        "dev": "vite --port 8000",
+        "test": "vitest",
+        "coverage": "vitest run --coverage"
     },
     "dependencies": {
-        "vite": "latest", 
+        "vite": "latest",
         "@vitejs/plugin-react": "latest", 
         "react": "latest",
-        "react-dom": "latest"
+        "react-dom": "latest",
+        "vitest": "latest",
+        "@vitest/coverage-c8": "latest",
+        "@testing-library/jest-dom": "latest",
+        "@testing-library/react": "latest",
+        "@testing-library/user-event": "latest",
+        "jsdom": "latest", 
+        "msw": "latest"
+    },
+    "stackblitz": {
+      "startCommand": "npm run test"
     }
 }
