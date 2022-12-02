@@ -8,6 +8,7 @@ const MEDIA_API_INDEX = "/media/index.json"
 
 const App = () => {
     const [isLoading, setIsLoading] = React.useState(false)
+    const player = new Audio("/media/audio/560446__migfus20__happy-background-music.mp3")
 
     if (isLoading) {
         return (
@@ -28,13 +29,8 @@ const App = () => {
                 src="/media/images/cd-cover-2978944_640.jpg" alt=""
             />
 
-            <audio
-                src="/media/audio/560446__migfus20__happy-background-music.mp3"
-                controls={SHOW_NATIVE_CONTROLS}
-            ></audio>
-
-            <button>Play</button>
-            <button>Stop</button>
+            <button onClick={player.play}>Play</button>
+            <button onClick={player.stop}>Stop</button>
         </div>
     )
 }
