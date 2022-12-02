@@ -41,7 +41,7 @@ const App = () => {
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <main class="container-fluid">
+    <main className="container-fluid">
       <App />
     </main>
   </React.StrictMode>,
