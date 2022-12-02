@@ -7,7 +7,7 @@ An internet radio for the frontend. Uses vite.js and react.
 ## Tasks
 
 - Refactor the app so it gets the radio stations and related data from the server: `/media/index.json`
-- Control the HTMLMediaElement (`<audio ... />`) using the play/pause buttons in the app. Subsequently disable the controls by setting [`const SHOW_NATIVE_CONTROLS = false`](./src/index.jsx#L6). See the docs on [HTMLMediaElement instance methods]([https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#instance_methods))
+- Control the HTMLMediaElement (`<audio ... />`) using the play/pause buttons in the app. Subsequently disable the controls by setting [`const SHOW_NATIVE_CONTROLS = false`](./src/index.jsx#L6). See the docs on [HTMLMediaElement instance methods](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#instance_methods)
 - [TODO] ensure the app matches the designs
 - Create the ability to cycle between the stations
 - Ensure all station logo's are rendered
