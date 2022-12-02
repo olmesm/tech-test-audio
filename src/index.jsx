@@ -2,13 +2,12 @@ import React from "react"
 import ReactDOM from "react-dom/client"
 import "./index.css"
 
-const SHOW_NATIVE_CONTROLS = true
-
 const MEDIA_API_INDEX = "/media/index.json"
+
+const player = new Audio("/media/audio/560446__migfus20__happy-background-music.mp3")
 
 const App = () => {
     const [isLoading, setIsLoading] = React.useState(false)
-    const player = new Audio("/media/audio/560446__migfus20__happy-background-music.mp3")
 
     if (isLoading) {
         return (
@@ -30,7 +29,7 @@ const App = () => {
             />
 
             <button onClick={player.play}>Play</button>
-            <button onClick={player.stop}>Stop</button>
+            <button onClick={player.pause}>Stop</button>
         </div>
     )
 }
