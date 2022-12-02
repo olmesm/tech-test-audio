@@ -1,5 +1,5 @@
 import React from "react"
-import { render, fireEvent, waitFor, screen } from "@testing-library/react"
+import { render, fireEvent, screen, waitFor } from "@testing-library/react"
 import { App } from "./app"
 import { rest } from 'msw'
 import { setupServer } from 'msw/node'
@@ -10,7 +10,7 @@ const TEST_DATA = {
     logo: "https://thiscatdoesnotexist.com",
   }
 
-const server = setupServer([
+const server = setupServer(...[
     rest.get('/api/index.json', (req, res, ctx) => {
       return res(ctx.json([TEST_DATA]))
     }),
@@ -23,15 +23,18 @@ beforeAll(() => server.listen())
 afterEach(() => server.resetHandlers())
 afterAll(() => server.close())
 
-test("data is loaded from the API", () => {
+test("data is loaded from the API", async () => {
     render(<App />)
-    
-    expect(screen.getByText(TEST_DATA.name)).toBeInTheDocument()
+
+    await waitFor(() => 
+      expect(screen.getByText(TEST_DATA.name)).toBeInTheDocument()
+    )
+
     expect(screen.getByTestId("audio").getAttribute('src')).toEqual(TEST_DATA.src_url)
 })
 
 test("play works", () => {
-    const spyPlay = jest.fn()
+    const spyPlay = vi.fn()
     window.HTMLMediaElement.prototype.play = spyPlay
     
     render(<App />)
