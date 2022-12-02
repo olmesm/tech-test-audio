@@ -1,3 +1,14 @@
 .player__image {
-    max-width: 7.5rem;
+    width: calc(100vw - 2 * var(--spacing));
+    max-width: 30rem;
+    height: calc(100vw - 2 * var(--spacing));
+    max-height: 30rem;
+    overflow: hidden;
+}
+
+.player__image img {
+    min-height: 100%;
+    object-fit: cover;
+    max-width: unset;
+    width: 100%;
 }
