@@ -11,10 +11,10 @@ const TEST_DATA = {
   }
 
 const server = setupServer(...[
-    rest.get('/api/index.json', (req, res, ctx) => {
+    rest.get('http://localhost:8000/api/index.json', (req, res, ctx) => {
       return res(ctx.json([TEST_DATA]))
     }),
-    rest.get('/api/audio', (req, res, ctx) => {
+    rest.get('http://localhost:8000/api/audio', (req, res, ctx) => {
       return res("")
     }),
   ])
@@ -33,20 +33,25 @@ test("data is loaded from the API", async () => {
     expect(screen.getByTestId("audio").getAttribute('src')).toEqual(TEST_DATA.src_url)
 })
 
-test("play works", () => {
+test("play works", async () => {
     const spyPlay = vi.fn()
     window.HTMLMediaElement.prototype.play = spyPlay
     
     render(<App />)
+    await waitFor(() => 
+      expect(screen.getByText(TEST_DATA.name)).toBeInTheDocument()
+    )
     
     fireEvent.click(screen.getByText(/play/i))
     
     expect(spyPlay).toHaveBeenCalledOnce()
-    expect(screen.getByTestId("audio").getAttribute('controls')).toBeFalsy()
 })
 
-test("controls are hidden", () => {
+test("controls are hidden", async () => {
     render(<App />)
+    await waitFor(() => 
+      expect(screen.getByText(TEST_DATA.name)).toBeInTheDocument()
+    )
 
-    expect(screen.getByTestId("audio").getAttribute('controls')).toBeFalsy()
+    expect(screen.getByTestId("audio").getAttribute('controls')).toBe(null) // this should be null and NOT ""
 })

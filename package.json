@@ -15,7 +15,8 @@
         "@testing-library/react": "latest",
         "@testing-library/user-event": "latest",
         "jsdom": "latest", 
-        "msw": "latest"
+        "msw": "latest",
+        "whatwg-fetch": "latest"
     },
     "stackblitz": {
       "startCommand": "npm run test"
