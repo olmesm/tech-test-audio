@@ -3,10 +3,10 @@ import ReactDOM from "react-dom/client"
 import "./index.css"
 
 const MEDIA_API_INDEX = "/media/index.json"
+const SHOW_NATIVE_CONTROLS = true
 
 const App = () => {
     const [isLoading, setIsLoading] = React.useState(false)
-    const player = new Audio("/media/audio/560446__migfus20__happy-background-music.mp3")
 
     if (isLoading) {
         return (
@@ -26,9 +26,14 @@ const App = () => {
             <img className="player__image" 
                 src="/media/images/cd-cover-2978944_640.jpg" alt=""
             />
+        
+            <audio
+              src="/media/audio/560446__migfus20__happy-background-music.mp3"
+              controls={SHOW_NATIVE_CONTROLS}
+            />
 
-            <button onClick={player.play}>Play</button>
-            <button onClick={player.pause}>Stop</button>
+            <button>Play</button>
+            <button>Stop</button>
         </div>
     )
 }
