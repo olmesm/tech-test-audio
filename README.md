@@ -1,7 +1,5 @@
 # React Tech test
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/olmesm/tech-test-audio)
-
 ---
 
 ## Requirements
