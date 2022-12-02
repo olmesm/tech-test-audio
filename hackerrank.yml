@@ -1,0 +1,15 @@
+version: 1.0
+configuration:
+	has_webserver: true
+	readonly_paths: 
+		- public/*
+		- index.html
+		- src/index.jsx
+	ide_config:
+		default_open_files: 
+			- src/app.jsx
+			- public/api/index.json
+			- README.md
+		project_menu:
+			run: npm run dev
+			install: npm install
